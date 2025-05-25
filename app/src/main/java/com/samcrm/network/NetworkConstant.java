@@ -25,7 +25,7 @@ public class NetworkConstant {
         int REQUEST_TIME = 50000;
     }
 
-//    public static final String BASE_URL = "http://192.168.42.62:8080/resources/";
+//    public static final String BASE_URL = "http://192.168.1.6:8080/resources/";
     public static final String BASE_URL = "http://140.238.250.40:8080/resources/";
 
     public static final String userDataURL = NetworkConstant.BASE_URL + "login/samcrmUserData";
