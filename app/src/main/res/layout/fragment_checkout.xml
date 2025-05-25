@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer">
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Address Details"
+            android:padding="12dp"
+            android:textColor="@color/light_txt"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/h3" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAdd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/AddressRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="Name"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/address_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="Street"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/address_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="Country"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/address_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="Zip code"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="moblie"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:id="@+id/changeAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="Change Address"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/h3" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/priceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:gravity="left"
+            android:hint="Price Details"
+            android:padding="12dp"
+            android:textColor="@color/light_txt"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/h3" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceTxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/AddressRL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/item_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:hint="Total Amount"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+                        <TextView
+                            android:id="@+id/totalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:id="@+id/applyCouponLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+
+                            android:id="@+id/applyCoupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="Generate Coupon"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/h3" />
+
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="wrap_content" android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:id="@+id/couponLayout"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:hint="Coupon code"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+                        <TextView
+                            android:id="@+id/coupon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content" android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:id="@+id/DisLayout"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:hint="Discount"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+
+                        <TextView
+                            android:id="@+id/dis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/couponMsgLayout"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp" android:visibility="gone"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/couponMsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="Coupon applied"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/h3"
+                           />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/amount_payable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:hint="Amount Payable"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textColor="@color/light_txt"
+                            android:textColorHint="@color/hint"
+                            android:textSize="@dimen/h3"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/button_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place order" />
+
+    </RelativeLayout>
+</RelativeLayout>

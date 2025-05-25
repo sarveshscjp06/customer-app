@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.samcrm.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.samcrm.bannerslider.Slider
+            android:id="@+id/banner_slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="parallax"
+            app:slider_animateIndicators="true"
+
+            app:slider_indicatorSize="10dp"
+            app:slider_interval="0"
+            app:slider_loopSlides="true"
+            app:slider_selectedSlideIndicator="@drawable/indicator_circle_selected"
+            app:slider_unselectedSlideIndicator="@drawable/indicator_circle_unselected" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view" android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</RelativeLayout>

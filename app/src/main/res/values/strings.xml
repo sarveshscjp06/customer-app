@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">samcrm2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_vendor_title">Vendor Shop Name</string>
+    <string name="prompt_vendor_regs_no">Vendor Registration No</string>
+    <string name="prompt_vendor_description">Vendor Description</string>
+    <string name="prompt_email">Email (at registration)</string>
+    <string name="prompt_mobile">Mobile (required)</string>
+    <string name="prompt_zipCode">Pin Code (at registration)</string>
+    <string name="prompt_password">Password (required)</string>
+    <string name="prompt_areYouVendor">Are You Vendor / Institution?</string>
+    <string name="prompt_otp">Enter OTP (when asked)</string>
+
+    <string name="action_sign_in">Sign</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_mobile">This mobile number is invalid</string>
+    <string name="error_invalid_password">The password should be between 5 to 10 characters.</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_vendor">VendorActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="list_contact">List Contact</string>
+    <string name="products_and_services">Products And Services</string>
+    <string name="choose_vendor">Choose Vendor</string>
+    <!-- Strings related to Contact Activity -->
+    <string name="prompt_firstname">Contact Name</string>
+    <string name="prompt_dateofbirth">Date Of Birth(yyyy-MM-dd)</string>
+    <string name="prompt_address_line1">Address Line 1</string>
+    <string name="prompt_comment">Note / Comment</string>
+    <string name="action_register">Add Contact</string>
+
+    <string name="title_activity_contact">New Contact</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_productAndService">New Contact</string>
+    <string name="prompt_category_name">Category Name</string>
+    <string name="prompt_category_description">Category Description</string>
+    <string name="prompt_category_sequence">Category Sequence</string>
+    <string name="action_update">UPDATE DATA</string>
+    <string name="title_activity_add_product">AddProductActivity</string>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp">
+
+
+<LinearLayout
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="Payment Details"
+        android:textColor="@color/light_txt"
+        android:textSize="@dimen/h2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/per_cast"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Total Payment"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="778"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h3" />
+    </LinearLayout>
+</LinearLayout>
+
+
+<TableLayout
+    android:id="@+id/TableView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/r1"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Discounts"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/Discounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h3" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/per_cast"
+        android:background="@color/colorPrimary"></View>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Total Payout"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:id="@+id/payout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="1225"
+            android:textColor="@color/light_txt"
+            android:textSize="@dimen/h3" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/per_cast"
+        android:background="@color/colorPrimary"></View>
+
+
+</TableLayout>
+
+
+<Button
+    android:id="@+id/submit"
+    style="@style/button_custom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/TableView"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:text="Checkout" />
+
+
+</RelativeLayout>
